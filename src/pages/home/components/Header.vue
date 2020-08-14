@@ -21,10 +21,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  @import '~@/assets/styles/varibles.styl' /* 引入stylus的全局配置文件 */
+
   .header
     display: flex
     line-height: .86rem
-    background-color: #00bcd4
+    background-color: $bgColoe /* 使用stylus全局配置的内容 */
     color: #fff
     .header-left
       width: .64rem
