@@ -21,7 +21,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import '~@/assets/styles/varibles.styl' /* 引入stylus的全局配置文件 */
+  /* 各类非 js 直接引用（import require）静态资源，依赖相对路径加载问题，要用 ~ 语法 */
+  @import '~@styles/varibles.styl' /* 引入stylus的全局配置文件 */
 
   .header
     display: flex
@@ -32,6 +33,7 @@ export default {
       width: .64rem
       float: left
       .icon-back
+        text-align: center
         font-size: .4rem
     .header-input
       flex: 1
