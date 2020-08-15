@@ -37,15 +37,18 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+/* 利用样式穿透，修改swpier的圆点颜色 */
 .wrapper >>> .swiper-pagination-bullet-active {
   background: #fff;
 }
 
 .wrapper {
+  /* 实现宽度100%，高度31.25%的比例 */
   overflow: hidden;
   width: 100%;
   height: 0;
   padding-bottom: 31.25%;
+  /* 实现宽度100%，高度31.25%的比例 */
   background: #eee;
 
   .swiper-img {
